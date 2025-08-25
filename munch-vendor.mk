@@ -302,6 +302,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/munch/proprietary/vendor/firmware/ipa_uc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.elf \
     vendor/xiaomi/munch/proprietary/vendor/firmware/ipa_uc.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.mdt \
     vendor/xiaomi/munch/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
+    vendor/xiaomi/munch/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
+    vendor/xiaomi/munch/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
+    vendor/xiaomi/munch/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
+    vendor/xiaomi/munch/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/xiaomi/munch/proprietary/vendor/lib64/camera/com.qti.sensormodule.munch_aac_ov8856_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.munch_aac_ov8856_ultra.bin \
     vendor/xiaomi/munch/proprietary/vendor/lib64/camera/com.qti.sensormodule.munch_ofilm_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.munch_ofilm_gc02m1_macro.bin \
     vendor/xiaomi/munch/proprietary/vendor/lib64/camera/com.qti.sensormodule.munch_ofilm_imx582_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.munch_ofilm_imx582_wide.bin \
@@ -349,6 +353,7 @@ PRODUCT_PACKAGES += \
     libCB \
     libOpenCL \
     libVkLayer_q3dtools \
+    libadreno_app_profiles \
     libadreno_utils \
     libadsprpc \
     libc2d30_bltlib \
@@ -359,6 +364,8 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libgpudataproducer \
     libgsl \
+    libkcl \
+    libkernelmanager \
     libllvm-glnext \
     libllvm-qcom \
     libmdsprpc \
@@ -380,12 +387,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.qspmhal@1.0 \
     btaudio_offload_if \
-    audio.primary.munch \
+    audio.primary.kona \
     sound_trigger.primary.kona \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     libFileMux_proprietary \
-    liba2dpoffload_munch \
+    liba2dpoffload \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -625,6 +633,7 @@ PRODUCT_PACKAGES += \
     libaoa \
     libarcdualcamsat \
     libarcmulticamsat \
+    libarcsat \
     libarcsoft_beautyshot \
     libarcsoft_hdr_detection \
     libarcsoft_hdrplus_hvx_stub \
@@ -827,6 +836,7 @@ PRODUCT_PACKAGES += \
     libssd \
     libst_soft_isp_calc_exposure_shared \
     libst_soft_isp_shared \
+    libsupermoon \
     libswregistrationalgo \
     libswvdec \
     libsymphony-cpu \
