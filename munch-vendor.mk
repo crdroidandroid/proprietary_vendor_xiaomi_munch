@@ -461,6 +461,7 @@ PRODUCT_PACKAGES += \
     libqcreverb \
     libqcvirt \
     libshoebox \
+    libswdap \
     libswgamedap \
     libswvqe \
     vendor.qti.hardware.audiohalext@1.0 \
