@@ -454,6 +454,7 @@ PRODUCT_PACKAGES += \
     libwfdutils_proprietary \
     libasphere \
     libhwdap \
+    libmisoundfx \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
